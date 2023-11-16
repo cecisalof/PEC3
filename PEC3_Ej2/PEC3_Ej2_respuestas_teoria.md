@@ -1,7 +1,7 @@
 ## Ejercicio 2: Teoría:
 
 A. 
-![Descripción de la imagen](/Users/codepremium/Desktop/UOC/segundo_semestre/js_framework/PEC3/PEC3_Ej2/img/noInterface_example.png)
+![Descripción de la imagen](./img/noInterface_example.png)
 
 
 B.
