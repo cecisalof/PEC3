@@ -16,3 +16,6 @@ function baby(dog1, dog2) {
     weight: (dog1.weight + dog2.weight) / 4
   };
 }
+
+// run baby function in terminal: node ejer1.js
+console.log(baby(dog, dog));
