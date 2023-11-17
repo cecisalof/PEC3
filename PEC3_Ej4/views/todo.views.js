@@ -98,7 +98,8 @@ class TodoView {
       }
     });
   }
-
+  
+  // Acciones o handles que son funciones pasadas a la vista como parámetros
   bindAddTodo(handler) {
     this.form.addEventListener("submit", event => {
       event.preventDefault();
