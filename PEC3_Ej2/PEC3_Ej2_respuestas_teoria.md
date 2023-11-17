@@ -31,7 +31,7 @@ a.-
 ```
 const i: 3 = 3;
 i = 4; // Error TS2588 : Cannot assign to 'i' because it is a constant.ts(2588)
-```;
+```
 
 La constante i se declara con un tipo literal de valor 3. Al asignar un valor diferente a i (en este caso, 4), TypeScript arroja un error indicando que no se puede asignar a i porque es una constante con un tipo literal.
 
@@ -47,7 +47,8 @@ j.push('5'); // Error TS2345: Argument of type '"5"' is not assignable to parame
 
 En este ejemplo ```j``` se infiere como tipo array basándose en los elementos proporcionados. En este caso, ```j``` es de tipo number[] porque los elementos iniciales son números. El error sucede al intentar añadir una cadena ('5') a un array que se espera que contenga solo números. Por lo tanto, arroja un error indicando que el argumento de tipo '"5"' no es asignable al parámetro de tipo 'number'.
 
-c.- ```let k: never = 4; // Error TSTS2322: Type '4' is not assignable to type 'never'.````
+c.- 
+```let k: never = 4; // Error TSTS2322: Type '4' is not assignable to type 'never'.```
 
 El tipo never en TypeScript representa un conjunto de valores que nunca ocurren, y generalmente se utiliza para expresar funciones que lanzan excepciones o entran en bucles infinitos. Cuando se intenta asignar un valor al tipo never, TypeScript se asegura de que el valor asignado no sea de ningún tipo válido. En tu caso, se está intentando asignar el valor 4 al tipo never, lo cual es incorrecto.
 
