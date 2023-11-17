@@ -65,3 +65,18 @@ Se podría corregir verificando el tipo de ```l``` antes de realizar operaciones
 
 3. (0.5 puntos) ¿Cuál es la diferencia entre una clase y una interface en TypeScript?
 
+En TypeScript, tanto las clases como las interfaces son constructores fundamentales de la programación orientada a objetos, pero tienen propósitos y usos ligeramente diferentes. 
+
+Una clase en TypeScript se utiliza para crear instancias de objetos con implementación de código y puede tener propiedades y métodos, además de contener lógica para operar con esos miembros.
+Una interfaz no puede contener implementación de código, ya que se centra en la estructura de los datos más que en su comportamiento; se utiliza para definir contratos y estructuras que deben cumplir las clases y otros objetos.
+
+Una clase puede instanciarse con la palabra clave new para crear objetos, mientras que una interfaz no puede instanciarse directamente, se utiliza principalmente para definir contratos para las clases y objetos.
+
+Un clase puede tener un constructor que se ejecuta cuando se crea una instancia de la clase. Una interfaz no puede tener un constructor, ya que no se utiliza para crear instancias, sino para describir la forma que deben tener las instancias.
+
+Una clase puede tener modificadores de acceso como public, private y protected para controlar la visibilidad de sus miembros, mientra que todos los miembros de una interfaz son públicos de forma predeterminada, no se especifican modificadores de acceso en una interfaz.
+
+La elección entre una clase y una interfaz depende de los requisitos específicos del diseño y la arquitectura del código.
+
+
+
