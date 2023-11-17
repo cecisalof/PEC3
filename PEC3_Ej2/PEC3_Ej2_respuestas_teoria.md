@@ -27,8 +27,9 @@ Es importante destacar que TypeScript utiliza la inferencia de tipo para deducir
 
 2. (1 punto) ¿Por qué se dispara cada uno de los errores del fichero code3.ts?
 
-a.- ```const i: 3 = 3;
-    i = 4; // Error TS2588 : Cannot assign to 'i' because it is a constant.ts(2588)
+a.- ```
+        const i: 3 = 3;
+        i = 4; // Error TS2588 : Cannot assign to 'i' because it is a constant.ts(2588)
     ```;
 
 La constante i se declara con un tipo literal de valor 3. Al asignar un valor diferente a i (en este caso, 4), TypeScript arroja un error indicando que no se puede asignar a i porque es una constante con un tipo literal.
@@ -37,7 +38,8 @@ Este comportamiento es parte de la naturaleza de TypeScript cuando se utiliza el
 
 Los tipos literales son útiles en situaciones donde deseas limitar las posibles opciones para una variable y quieres que el sistema de tipos te ayude a detectar posibles errores en tiempo de compilación. Este enfoque ayuda a prevenir posibles errores y mejora la seguridad del tipo en tu código.
 
-b.- ```const j = [1, 2, 3];
+b.- ```
+        const j = [1, 2, 3];
         j.push(4);
         j.push('5'); // Error TS2345: Argument of type '"5"' is not assignable to parameter of type 'number'.
     ´´´
@@ -48,7 +50,8 @@ c.- ```let k: never = 4; // Error TSTS2322: Type '4' is not assignable to type '
 
 El tipo never en TypeScript representa un conjunto de valores que nunca ocurren, y generalmente se utiliza para expresar funciones que lanzan excepciones o entran en bucles infinitos. Cuando se intenta asignar un valor al tipo never, TypeScript se asegura de que el valor asignado no sea de ningún tipo válido. En tu caso, se está intentando asignar el valor 4 al tipo never, lo cual es incorrecto.
 
-d.- ```let l: unknown = 4;
+d.- ```
+        let l: unknown = 4;
         let m = l * 2; // Error TS2571: Object is of type 'unknown'.
     ```
 
