@@ -44,7 +44,7 @@ b.-
 const j = [1, 2, 3];
 j.push(4);
 j.push('5'); // Error TS2345: Argument of type '"5"' is not assignable to parameter of type 'number'.
-´´´
+```
 
 En este ejemplo ```j``` se infiere como tipo array basándose en los elementos proporcionados. En este caso, ```j``` es de tipo number[] porque los elementos iniciales son números. El error sucede al intentar añadir una cadena ('5') a un array que se espera que contenga solo números. Por lo tanto, arroja un error indicando que el argumento de tipo '"5"' no es asignable al parámetro de tipo 'number'.
 
