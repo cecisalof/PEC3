@@ -1,4 +1,5 @@
-
+// Sustituye /***/ por las instrucciones adeacuadas que cumplan las operaciones 
+// y salidas indicadas en los comentarios.
 function printArray(array) {
     //code to print the array on console
     console.log(array);
@@ -15,10 +16,10 @@ printArray(array); // 3,4,1
 array.unshift(8);
 printArray(array); // 8,3,4,1
 // /** check if every number is greater than 3 */
-var everyisgreater =  array.every(number => number > 3);
+var everyisgreater = array.every(function (number) { return number > 3; });
 console.log(everyisgreater); //false
 // /** check if every number is less than 10 */
-var everyisless =  array.every(number => number < 10);
+var everyisless = array.every(function (number) { return number < 10; });
 console.log(everyisless); //true
 console.log(array.sort()); //1,3,4,8
-console.log(array.reverse()) //8,4,3,1
+console.log(array.reverse()); //8,4,3,1
