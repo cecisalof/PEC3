@@ -4,8 +4,8 @@ Este es el README para el proyecto PEC3_Ej4. Aquí encontrarás instrucciones so
 
 ## Traspilar archivos 
 
-Los archivos se presentan transpilados de ```ts``` a ```js```.
-De cualquier manera, se puede compilar utilizando el comando ```tsc [nombre del archivo]```.
+Los archivos se presentan transpilados de ```.ts``` a ```.js```.
+De cualquier manera, se puede compilar cualquier archivo utilizando el comando ```tsc [nombre del archivo]```.
 
 La aplicación se ejecuta abriendo el archivo index.html del directorio ```PEC3_EJ4```.
 
