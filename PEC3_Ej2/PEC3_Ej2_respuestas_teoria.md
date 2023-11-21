@@ -1,7 +1,7 @@
 ## Ejercicio 2: Teoría:
 
 A. En la siguiente imagen se muestra un error de tipo detectado por typescript en el archivo core1.ts. El error es provocado en la constante a ```const a = 1 + '2';``` al convertir un número a una cadena de texto. 
-Gracias a que Typescript infiere el tipo de todas las variables del archivo, detecta el valor de ```apple```como string y lanza error de tipo en la constante ```d```, misma que intenta hacer una operación aritmética sobre tipo string: ```const d = c.apple * 4;```. 
+Gracias a que Typescript infiere el tipo de todas las variables del archivo, detecta el valor de ```apple```como string y lanza error de tipo en la constante ```d```, ya que intenta hacer una operación aritmética sobre una varianle de tipo string: ```const d = c.apple * 4;```. 
 
 Lo que hace Typescript en este ejemplo es útil ya que detecta errores de tipo antes de que el código se ejecute, lo que facilita la identificación y corrección de errores, así como la colaboración y la integración de código.
 

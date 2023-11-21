@@ -1,6 +1,3 @@
-//Sustituye /***/ por las instrucciones adecuadas que cumplan las operaciones 
-//y salidas indicadas en los comentarios.
-
 abstract class Animal {
     static population: number = 0;
     constructor() {
