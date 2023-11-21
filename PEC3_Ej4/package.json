@@ -1,7 +1,8 @@
 {
   "scripts": {
     "build": "webpack",
-    "start": "webpack --mode development --open"
+    "start": "webpack serve --mode development",
+    "main": "./src/app.js"
   },
   "devDependencies": {
     "babel": "^6.23.0",

@@ -3,28 +3,21 @@ const path = require('path');
 
 module.exports = {
   mode: 'development', // or 'production' as needed
-  entry: './src/app.ts', // Entry file of your TypeScript app
+  entry: './src/app.js', // Entry file of your TypeScript app
   output: {
     filename: 'bundle.js', // Output file name
     path: path.resolve(__dirname, 'dist') // Output directory
   },
   devtool: 'inline-source-map',
-  // devServer: {
-  //   static: {
-  //     directory: path.join(__dirname, 'public'),
-  //   },
-  //   compress: true,
-  //   port: 8080,
-  // },
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
     compress: true,
     // inline: true, 
     host: "localhost",
     port: 8080,
-    stats: "errors-only"
+    // stats: "errors-only"
   },
-  watch: true,
+  // watch: true,
   module: {
     rules: [
       {
@@ -48,7 +41,8 @@ module.exports = {
     ]
   },
   resolve: {
-    extensions: ['.tsx', '.ts', '.js']
+    extensions: ['.tsx', '.ts', '.js'],
+    alias: false,
   },
   plugins: [
     //Generate index.html in /dist => https://github.com/ampedandwired/html-webpack-plugin

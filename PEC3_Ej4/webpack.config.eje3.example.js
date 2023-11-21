@@ -17,7 +17,7 @@ module.exports = {
     },
     extensions: [".js", ".ts", ".tsx"]
   },
-  entry: ['babel-polyfill', "./app.ts"],
+  entry: ['babel-polyfill', "./app.js"],
   devtool: "source-map",
   devServer: {
     contentBase: "./dist", 
