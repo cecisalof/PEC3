@@ -6,19 +6,18 @@ const path = require("path");
 const basePath = __dirname;
 
 module.exports = {
-  context: path.join(basePath, "src"),
+  mode: 'development', // or 'production' as needed,
+  context: path.join(basePath, "./src"),
   resolve: {
     alias: {
-      pods: path.resolve(__dirname, "./src/pods/"),
-      views: path.resolve(__dirname, "./src/views/"),
-      layouts: path.resolve(__dirname, "./src/layouts"),
-      services: path.resolve(__dirname, "./src/services"),
-      validators: path.resolve(__dirname, "./src/validators"),
-      constants: path.resolve(__dirname, "./src/constants")
+      views: path.resolve(__dirname, "./views/todoT.views.ts"),
+      services: path.resolve(__dirname, "./services/todoT.service.ts"),
+      controller: path.resolve(__dirname, "./services/todoT.controller.ts"),
+      model: path.resolve(__dirname, "./services/todoT.model.ts"),
     },
     extensions: [".js", ".ts", ".tsx"]
   },
-  entry: ['babel-polyfill', "./index.tsx"],
+  entry: ['babel-polyfill', "./app.ts"],
   devtool: "source-map",
   devServer: {
     contentBase: "./dist", 
